@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+           <a href="index.html"> <img src="logo.png" alt="Logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="./catalogo/catalogoM.html"><p>Mouses</p></a></li>
+                    <li><a href="./catalogo/catalogoT.html"><p>Teclados</p></a></li>
+                    <li><a href="./catalogo/catalogoP.html"><p>Placas de Video</p></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Carrossel de imagens -->
+    <div class="slider">
+        <div class="slides">
+            <img class="slide" src="./img/bl_friday.png" alt="Imagem 1">
+            <img class="slide" src="./img/bl_friday2.png" alt="Imagem 2">
+            <img class="slide" src="./img/bl_friday3.png" alt="Imagem 3">
+        </div>
+    </div>
+
+    <script>
+        let indice = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function mostrarProximaImagem() {
+            indice = (indice + 1) % totalSlides;
+            document.querySelector('.slides').style.transform = `translateX(-${indice * 100}%)`;
+        }
+
+        setInterval(mostrarProximaImagem, 5000);
+    </script>
+
+    <div class="container">
+        <div class="vendas">
+            <section>
+                <div class="footer_vendas">
+                    <div class="title">
+                        <h1 class="footer_vendas-h1">Produtos</h1>
+                        <hr class="hr_vermelho">
+                    </div>
+                </div>
+                <div class="verndas_produtos">
+                    <nav>
+                        <ul>
+                            <li>
+                                <div class="quadrado_vermelho">Informatica</div>
+                            </li>
+                            <li>
+                                <div class="quadrado_vermelho">Perifericos</div>
+                            </li>
+                            <li>
+                                <div class="quadrado_vermelho">Televisões</div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <hr class="hr_cinza">
+                    <div class="grid-container">
+                        <a href="./catalogo/catalogoTV.html">
+                        <div class="grid-item">
+                            <img src="https://http2.mlstatic.com/D_Q_NP_644585-MLU75981854059_042024-AC.webp" alt="">
+                            <hr class="hr_cinza">
+                            <div class="container">
+                                <h1 class="h1_cinza">R$ 1.499</h1>
+                                <h3 class="h3_cinza">Smart Tv Samsung 32'' Hd Tizen <br> T4300 Preto</h3>
+                            </div>
+                        </div>
+                        </a>
+
+                        <a href="./catalogo/catalogoTV.html">
+                        <div class="grid-item">
+                            <img src="https://http2.mlstatic.com/D_Q_NP_732747-MLU77097798749_062024-AC.webp" alt="">
+                            <hr class="hr_cinza">
+                            <div class="container">
+                                <h1 class="h1_cinza">R$ 1.499</h1>
+                                <h3 class="h3_cinza">Smart Tv Samsung 32'' Hd Tizen <br> T4300 Preto</h3>
+                            </div>
+                        </div>
+                        </a>
+
+                        <a href="./catalogo/catalogoM.html">
+                        <div class="grid-item">
+                            <img src="https://http2.mlstatic.com/D_Q_NP_819704-MLU75983725999_042024-AC.webp" alt="">
+                            <hr class="hr_cinza">
+                            <div class="container">
+                                <h1 class="h1_cinza">R$ 1.499</h1>
+                                <h3 class="h3_cinza">Smart Tv Samsung 32'' Hd Tizen <br> T4300 Preto</h3>
+                            </div>
+                        </div>
+                        </a>
+
+                        <a href="./catalogo/catalogoTV.html">
+                        <div class="grid-item">
+                            <img src="https://http2.mlstatic.com/D_Q_NP_787026-MLU76386624875_052024-AC.webp" alt="">
+                            <hr class="hr_cinza">
+                            <div class="container">
+                                <h1 class="h1_cinza">R$ 1.499</h1>
+                                <h3 class="h3_cinza">Smart Tv Samsung 32'' Hd Tizen <br> T4300 Preto</h3>
+                            </div>
+                        </div></a>
+                    </div>
+                    <div class="grid-container">
+                        <a href="./catalogo/catalogoN.html">
+                        <div class="grid-item">
+                            <img src="https://http2.mlstatic.com/D_Q_NP_752542-MLU72675212578_112023-AC.webp" alt="">
+                            <hr class="hr_cinza">
+                            <div class="container">
+                                <h1 class="h1_cinza">R$ 1.499</h1>
+                                <h3 class="h3_cinza">Smart Tv Samsung 32'' Hd Tizen <br> T4300 Preto</h3>
+                            </div>
+                        </div></a>
+
+                        <a href="./catalogo/catalogoN.html">
+                        <div class="grid-item">
+                            <img src="https://http2.mlstatic.com/D_Q_NP_707299-MLU72748486687_112023-AC.webp" alt="">
+                            <hr class="hr_cinza">
+                            <div class="container">
+                                <h1 class="h1_cinza">R$ 1.499</h1>
+                                <h3 class="h3_cinza">Smart Tv Samsung 32'' Hd Tizen <br> T4300 Preto</h3>
+                            </div>
+                        </div></a>
+
+                        <a href="./catalogo/catalogoTV.html">
+                        <div class="grid-item">
+                            <img src="https://http2.mlstatic.com/D_Q_NP_763352-MLU77595801805_072024-AC.webp" alt="">
+                            <hr class="hr_cinza">
+                            <div class="container">
+                                <h1 class="h1_cinza">R$ 1.499</h1>
+                                <h3 class="h3_cinza">Smart Tv Samsung 32'' Hd Tizen <br> T4300 Preto</h3>
+                            </div>
+                        </div>
+                        </a>
+
+                        <a href="./catalogo/catalogoN.html">
+                        <div class="grid-item">
+                            <img src="https://http2.mlstatic.com/D_Q_NP_689964-MLA54840382306_042023-AC.webp" alt="">
+                            <hr class="hr_cinza">
+                            <div class="container">
+                                <h1 class="h1_cinza">R$ 1.499</h1>
+                                <h3 class="h3_cinza">Smart Tv Samsung 32'' Hd Tizen <br> T4300 Preto</h3>
+                            </div>
+                        </div></a>
+                    </div>
+                </div>
+        </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
